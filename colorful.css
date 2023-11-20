@@ -6563,3 +6563,10 @@ html, body {
   -ms-user-select: none;
       user-select: none;
   /* margin-bottom: -200px; */ }
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
