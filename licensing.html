@@ -17,10 +17,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" style="padding-right: 39px;">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-static-top" style="padding-right: 39px; opacity: 100 !important;">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img class="img-fluid d-block mx-auto" src="assets/logos/bliss-bass-logo-banner.png" width="180"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar4SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar3SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -42,14 +42,14 @@
             <a class="nav-link" href="licensing.html">Licensing</a>
           </li>
         </ul>
-        <a class="btn navbar-btn btn-outline-light ml-2" href="#downloads">Downloads</a><a class="btn navbar-btn ml-2 disabled btn-outline-primary" href="#" contenteditable="true">Configure Your Own</a>
+        <a class="btn navbar-btn btn-outline-light ml-2" href="index.html#downloads">Downloads</a><a class="btn navbar-btn ml-2 disabled btn-outline-primary" href="#">Configure Your Own</a>
       </div>
     </div>
   </nav>
   <div class="py-5 text-center cover d-flex flex-column bg-dark">
     <div class="container my-auto">
       <div class="row">
-        <div class="mx-auto col-lg-6 col-md-8" style="">
+        <div class="mx-auto col-md-12 col-lg-12" style="">
           <img class="img-fluid d-block mx-auto" src="assets/logos/Bliss-Bass_logo.png" width="280">
           <div class="col-md-12 text-center">
             <h2 class="display-3">Licensing</h2>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-md-6 p-3">
           <h4>Q: Does Bliss Bass include proprietary software?</h4>
-          <p> A: Yes. Our FOSS and Vanilla builds might include some proprietary parts for drivers, firmware and media codecs.&nbsp;<br><br>Proprietary redistributables in all Bliss OS public builds:&nbsp;<br>- linux-firmware blobs&nbsp;<br>- Proprietary linux drivers (broadcom-wl for example)&nbsp;<br>- some media codecs (for decoding H.264/HEVC)&nbsp;<br><br></p>
+          <p> A: Yes. Our FOSS and Vanilla builds might include some proprietary parts for drivers, firmware and media codecs.&nbsp;<br><br>Proprietary redistributables in all Bliss OS public builds:&nbsp;<br>- <b>linux-firmware blobs</b>&nbsp;<br>- <b>Proprietary linux drivers</b> (broadcom-wl for example)&nbsp;<br>- <b>some media codecs</b> (for decoding H.264/HEVC)&nbsp;<br><br></p>
         </div>
         <div class="col-md-6 p-3">
           <h4>Q: Is Bliss Bass suitable for individuals?</h4>
@@ -93,14 +93,14 @@
           <p> A: Yes. We produce minimal vanilla and FOSS builds of Bliss-Bass with x86/x86_64 PC hardware support. Bliss-Bass builds come with only proprietary drivers, firmware and media support included, and those are available to test with.&nbsp;While those builds are very basic, they do include much of what would be needed to base a product off of. If your product requires no additional changes on top of what is released to the public, then you are free to use it at no cost.<br>If your product requires Google Apps, ARM/ARM64 Native-Bridge, or Widevine, due to licensing restrictions from their holding companies, we are unable to provide support. In those cases, we suggest that you <a href="mailto:info@blisscolabs.dev?subject=Development Contract Inquiry">reach out</a> and we can help you look into alternative options using open-source solutions.&nbsp;<br></p>
         </div>
         <div class="col-md-6 p-3">
-          <h4>Q: Can my company use Bliss Bass as-is?</h4>
-          <p> A: Yes. The Bliss Bass versions we release will be ready to use out of the box, although we do expect most companies to at least want to rebrand it as their own. This is why we provide that service at an affordble rate.&nbsp;<br></p>
+          <h4>Q: Is there a Bliss Bass version with Google Play Store?</h4>
+          <p> A: No. Google Play Store and Google Mobile Services is not abailable to license for generic devices. This is why we use open-source alternatives for compatibility with most of what GMS offers. The open-source solutions we offer are:<br>- <b>microG</b>: A free-as-in-freedom re-implementation of Google’s proprietary Android user space apps and libraries.&nbsp;<br>- <b>Aurora Store</b>:&nbsp;An unofficial FOSS client to Google Play with an elegant design and privacy<br>- <b>Neo-Store</b>:&nbsp;An F-Droid client with modern UI and an arsenal of extra features.<br>- <b>Need Your Own?</b>: Custom F-Droid based store options are available</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 p-3">
-          <h4>Q: Can my company use Bliss Bass source-code in a product?</h4>
-          <p style=""> A: Yes, This applies to&nbsp;Android-PC (AOSP), Bliss OS, Bliss OS Go or Bliss Bass sources.&nbsp;<b>If you are an individual developer, a startup, or represent some other business enterprise and you are interested in using our sources, the open-source licenses we maintain allow you to use the source at no cost as long as you use it: A) as-is, B) you contribute any changes made back to the source, or C) produce the full source to the public independently.</b> If you would like to use our source and make changes to it that you do not plan on releasing as open-source, we request you contact us to work out a <b>per-device licensing agreement</b> and/or setup a <a href="mailto:info@blisscolabs.dev?subject=Development Contract Inquiry">development contract</a> for branding, optimizations and specific needs.</p>
+          <h4>Q: Can my company use Bliss Bass in a product?</h4>
+          <p style=""> A: Yes, This applies to&nbsp;Android-PC (AOSP), Bliss OS, Bliss OS Go or Bliss Bass sources.&nbsp;<b>If you are an individual developer, a startup, or represent some other business enterprise and you are interested in using our sources, the open-source licenses we maintain allow you to use the source at no cost as long as you use it:&nbsp;</b><br><b>A) as-is, meaning you make no changes to how we release it.</b><br><b>B) you contribute any changes made back to the source.</b><br><b>C) produce the full source to the public independently.</b><br><br>If you would like to use our source and make changes to it that you do not plan on releasing as open-source, we request you contact us to work out a <b>per-device licensing agreement</b> and/or setup a <a href="mailto:info@blisscolabs.dev?subject=Development Contract Inquiry">development contract</a> for branding, optimizations and specific needs.</p>
         </div>
         <div class="col-md-6 p-3">
           <h4> Q: Does my company have to release any changes made to the collective source code of Bliss Bass? </h4>
@@ -108,40 +108,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 p-3">
-          <h4>Per-Device License Pricing Scale:</h4>
-          <div class="table-responsive">
-            <table class="table table-bordered table-secondary">
-              <thead class="thead-dark">
-                <tr>
-                  <th># Devices</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody class="text-dark bg-light">
-                <tr>
-                  <th>5000 (or below) units license</th>
-                  <td>$17/unit</td>
-                </tr>
-                <tr>
-                  <th>10,000 units license</th>
-                  <td>$15/unit</td>
-                </tr>
-                <tr>
-                  <th scope="row">30,000 units license</th>
-                  <td>$13/unit</td>
-                </tr>
-                <tr>
-                  <th scope="row">50,000 units license</th>
-                  <td>$10/unit</td>
-                </tr>
-                <tr>
-                  <th scope="row">++50,000 units license</th>
-                  <td><a href="mailto:info@blisscolabs.dev?subject=Development Contract Inquiry">Contact Us</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="col-md-12 pt-5 text-center">
+          <h1>Licensing Questions?</h1>
+          <h5>We try to offer a wide variety of licensing options that cater to organizations of all sizes.</h5>
+          <p class="mb-3">If you are not sure if you need a license, or just have some questions on our licensing options, please feel free to contact us. We love helping out others find the best way to contribute back to the source.</p>
+          <a class="btn btn-outline-primary mt-3" href="mailto:info@blisscolabs.dev?subject=Licensing Inquiry">Contact Us</a>
         </div>
       </div>
     </div>
