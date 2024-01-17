@@ -566,3 +566,20 @@ background-attachment: fixed;
     transform: translateX(100%) rotate(120deg);
   }
 }
+
+/* The ribbons */
+.ribbon-2 {
+  --f: 10px; /* control the folded part*/
+  --r: 15px; /* control the ribbon shape */
+  --t: 10px; /* the top offset */
+  text-align: center;
+  position: absolute;
+  inset: var(--t) calc(-1*var(--f)) auto auto;
+  padding: 0 66% calc(0px + var(--f)) calc(10px + var(--r));
+  clip-path: 
+    polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
+      calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
+      var(--r) calc(50% - var(--f)/2));
+  background: #bd7e00;
+  box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+}
