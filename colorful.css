@@ -7531,3 +7531,15 @@ html, body {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--f)), calc(100% - var(--f)) 100%, calc(100% - var(--f)) calc(100% - var(--f)), 0 calc(100% - var(--f)), var(--r) calc(50% - var(--f)/2));
   background: #bd7e00;
   box-shadow: 0 calc(-1*var(--f)) 0 inset #0005; }
+
+  .configure-button:before {
+    content:"Configure Your Own";
+  }
+
+  .configure-button:hover:before {
+    content:"Coming Soon!";
+  }
+  
+  .configure-button:hover {
+    background-color: var(--gray-dark);
+  }
