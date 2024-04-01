@@ -6555,6 +6555,13 @@ html, body {
   -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); }
 
+.filter-darker {
+  -webkit-filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  background: rgba(21, 21, 21, 0.75);
+  position: absolute;
+  align-items: center; }
+
 .disabler {
   opacity: 0.5;
   -webkit-user-select: none;
@@ -7532,14 +7539,15 @@ html, body {
   background: #bd7e00;
   box-shadow: 0 calc(-1*var(--f)) 0 inset #0005; }
 
-  .configure-button:before {
-    content:"Configure Your Own";
-  }
+.hovercolor-blue:hover {
+  background-color: #00a0c6 !important;
+  color: #1c1817; }
 
-  .configure-button:hover:before {
-    content:"Coming Soon!";
-  }
-  
-  .configure-button:hover {
-    background-color: var(--gray-dark);
-  }
+.configure-button:before {
+  content: "Configure Your Own"; }
+
+.configure-button:hover:before {
+  content: "Coming Soon!"; }
+
+.configure-button:hover {
+  background-color: var(--gray-dark); }
