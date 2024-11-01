@@ -26,6 +26,10 @@ const termsCheckboxEl11 = document.querySelector('.js-terms-chk11')
 const bookButtonEl11 = document.querySelector('.js-book-btn11')
 const termsCheckboxEl12 = document.querySelector('.js-terms-chk12')
 const bookButtonEl12 = document.querySelector('.js-book-btn12')
+const termsCheckboxEl13 = document.querySelector('.js-terms-chk13')
+const bookButtonEl13 = document.querySelector('.js-book-btn13')
+const termsCheckboxEl14 = document.querySelector('.js-terms-chk14')
+const bookButtonEl14 = document.querySelector('.js-book-btn14')
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -129,6 +133,22 @@ document.addEventListener('DOMContentLoaded', () => {
       
     termsCheckboxEl12.addEventListener('change', e => {
       bookButtonEl12.disabled = !termsCheckboxEl12.checked
+    })
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    'use strict'
+      
+    termsCheckboxEl13.addEventListener('change', e => {
+      bookButtonEl13.disabled = !termsCheckboxEl13.checked
+    })
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    'use strict'
+      
+    termsCheckboxEl14.addEventListener('change', e => {
+      bookButtonEl14.disabled = !termsCheckboxEl14.checked
     })
 })
 
