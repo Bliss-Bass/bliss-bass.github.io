@@ -12,8 +12,12 @@
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="colorful.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css'>
+  <link rel='stylesheet' href='https:////cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css'>
+
   <!-- Script: Navbar on-top -->
   <script src="js/navbar-ontop.js"></script>
 </head>
@@ -55,8 +59,7 @@
         <div class="mx-auto col-lg-6 col-md-8" style="">
           <img class="img-fluid d-block mx-auto" src="assets/logos/Bliss-Bass_logo.png" width="280">
           <h3 class="display-3 text-center"><b>Bass OS</b></h3>
-          <p>Bass OS (Broad Apparatus Support System) is a highly configurable open-source toolkit and OS based on Android-x86 and <a href="https://blissos.org">Bliss OS</a>, and it works with most Windows, ChromeOS &amp; Linux PC hardware.</p>
-          <p>Bass OS contains only proprietary drivers, firmware and codecs, and is Google free by default, but can also come with <a href="https://microg.org/" target="_blank">MicroG</a> included for applications that rely on Google Play Services.&nbsp;<br></p>
+          <p>Bass OS (Broad Apparatus Support System) is a highly configurable open-source OS based on AOSP, Android-x86 and <a href="https://blissos.org">Bliss OS</a>, and it works with most x86_64 (amd64) based Windows, ChromeOS &amp; Linux PC hardware, designed to be easily customized and rebranded for your specific project needs</p>
           <p>Bass Toolkit&nbsp;is used to create Bass OS, and it is designed to be easily setup, configured, and customized with your branding and applications, making it perfect for products and businesses.</p>
         </div>
       </div>
@@ -65,7 +68,7 @@
       <div class="row">
         <div class="mx-auto col-lg-6 col-md-8 col-10">
           <a href="#features">
-            <h6>All about that Bass, no Treble</h6><i class="d-block fa fa-angle-down fa-2x"></i>
+            <h6>All about that Bass</h6><i class="d-block fa fa-angle-down fa-2x"></i>
           </a>
         </div>
       </div>
@@ -77,6 +80,8 @@
         <div class="col-md-12 text-center">
           <h2 class="text-white mb-4">Features</h2>
           <p class="text-white lead">We created Bass OS to allow a variety of features to be included and configuration options to be tuned out-of-the-box, letting one source cover a variety of different devices.</p>
+          <p class="text-white">Bass OS contains only proprietary drivers, firmware and codecs, and is Google free by default, and can also come with <a href="https://microg.org/" target="_blank">MicroG</a> included for applications that rely on GMS.&nbsp;<br></p>
+          
         </div>
       </div>
       <div class="row">
@@ -964,13 +969,14 @@
       <div class="row">
         <div class="col-lg-4 p-3">
           <div class="card text-center bg-secondary">
-            <div class="ribbon-2 text-center flex-grow-1 align-items-center d-flex">Watermarked</div>
+            <!-- <div class="ribbon-2 text-center flex-grow-1 align-items-center d-flex">Watermarked</div> -->
+            <div class="ribbon-3 mb-2 text-center flex-grow-1 align-items-center d-flex">Licensing Required</div>
             <div class="card-img-top">
               <img class="card-img" src="assets/screenshots/kiosk_2/Screenshot_20241103-112001_Kiosk Launcher.png">
             </div>
             <div class="card-header p-3 mt-2">
               <h3>Kiosk Mode</h3>
-              <h5 style="">Updated: 11/02/2024</h5>
+              <h5 style="">Updated: 11/08/2024</h5>
             </div>
             <div class="card-body p-3" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
               <p>A minimal Lockdown based build with the Kiosk launcher and Tablet default configuration options:</p>
@@ -983,6 +989,7 @@
                 <li class="mb-1">Lockdown/Admin Modes</li>
                 <li class="mb-1">Gesture or 3-button Navigation</li>
                 <li class="mb-1">Able to Auto-Launch 1 app</li>
+                <li class="mb-1">Passcode protected Settings</li>
                 <li class="mb-1">Support for dual ethernet</li>
                 <li class="mb-1">Always On Configuration</li>
               </ul>              
@@ -994,7 +1001,8 @@
                 </strong>
                 <button class="js-book-btn4 btn btn-primary mx-2 my-2" disabled href="" target="_blank">Download</button>
               </form>
-              <p class="mt-3">Kiosk Launcher is only available as an option with our custom build service</p><a class="btn btn-secondary mt-3" target="_blank" href="mailto:info@navotpala.tech?subject=Kiosk Launcher Inquiry">Contact Us About Options</a>
+              <p class="mt-3">Please contact us about licensing the build for your devices.</p>
+              <a class="btn btn-secondary mt-3" target="_blank" href="mailto:info@navotpala.tech?subject=Kiosk Licensing Inquiry">Contact Us</a>
             </div>
           </div>
         </div>
@@ -1058,6 +1066,7 @@
                 <li class="mb-1">Lockdown/Admin Modes</li>
                 <li class="mb-1">Gesture or 3-button Navigation</li>
                 <li class="mb-1">Able to Auto-Launch multiple apps (up to 4 displays)</li>
+                <li class="mb-1">Passcode protected Settings</li>
                 <li class="mb-1">Support for dual ethernet</li>
                 <li class="mb-1">Bliss Setupwizard (with localization)</li>
                 <li class="mb-1">Multi-Display IME Support</li>
@@ -1083,6 +1092,155 @@
         </div>
       </div>
 
+      <!-- MDM Builds  -->
+      <div class="row">
+        <div class="text-center text-white mx-auto col-md-12">
+          <h1>MDM Builds</h1>
+          <h4>Mobile Device Management solutions come in many forms</h4>
+          <h5>These builds are based on some of the popular MDM options available for x86_64 devices. We can easily integrate any others if needed as well</h5>
+          <h6>(Watermarked Builds are for demonstration purposes. <a href="mailto:info@navotpala.tech?subject=Watermarked Build Inquiry">Contact us</a> for more information)</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-slider">
+          <!-- card -->
+          <div class="card ">
+            <a href="https://smil-control.com/" target="_blank" class="main-link">
+              <h2 class="title">SMIL-Control</h2>
+              <div class="image">
+                <img src="assets/logos/smil-control.png" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+              </div>
+            </a>
+            <h6 class="subtitle">AD/Signage</h6>
+            <p class="description">Standard AD/Signage Build
+              Includes Garlic Launcher and Garlic-Player</p>
+            <div class="badge">Licensing Required</div>
+            <!-- <div class="price">
+              <span class="new-price">$10/mo per-device (avg)</span>
+              <span class="original-price">
+                <span class="sr-only">Licensing:</span>
+                Bass License: $16 per-device
+              </span>
+            </div> -->
+            <div class="rating">
+              <form action="https://github.com/Bliss-Bass/Bass-OS-releases/releases/tag/Bass-Ad_Signage-v15.9-x86_64-2024110721" target="_blank">
+                <strong>
+                  I have read and agree to the <a class="modal-trigger" href="https://docs.blisscolabs.dev/legal/end_user_license_agreement/" target="_blank">End User License Agreement (EULA) </a>
+                  <input class="js-terms-chk19" type="checkbox" name="termsAccepted">
+                </strong>
+                <button class="js-book-btn19 btn btn-primary mx-o my-2" disabled href="" target="_blank">Download</button>
+              </form>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- <div class="card disabler">
+            <a href="https://www.spectrio.com/" target="_blank" class="main-link">
+              <h2 class="title">Spectrio</h2>
+              <div class="image">
+                <img src="assets/logos/spectrio.png" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+              </div>
+            </a>
+            <h6 class="subtitle">AD/Signage</h6>
+            <p class="description">Standard Tablet Build 
+              Includes MicroG open-source GMS alternative</p>
+            <div class="badge">Watermarked</div>
+            <div class="price">
+              <span class="new-price">$20/mo per-device (avg)</span>
+              <span class="original-price">
+                <span class="sr-only">Licensing:</span>
+                Bass Licensing Options Apply
+              </span>
+            </div>
+            <div class="rating">
+              <form action="" target="_blank">
+                <strong>
+                  I have read and agree to the <a class="modal-trigger" href="https://docs.blisscolabs.dev/legal/end_user_license_agreement/" target="_blank">End User License Agreement (EULA) </a>
+                  <input class="js-terms-chk16" type="checkbox" name="termsAccepted">
+                </strong>
+                <button class="js-book-btn16 btn btn-primary mx-o my-2" disabled href="" target="_blank">Download</button>
+              </form>
+            </div>
+          </div> -->
+          <!-- card -->
+          <div class="card disabler">
+            <a href="https://scalefusion.com/" target="_blank" class="main-link">
+              <h2 class="title">Scalefusion</h2>
+              <div class="image">
+                <img src="assets/logos/scalefusion.png" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+              </div>
+            </a>
+            <h6 class="subtitle">General MDM</h6>
+            <p class="description">Standard Tablet Build 
+              Includes MicroG open-source GMS alternative</p>
+            <div class="badge">Watermarked</div>
+            <!-- <div class="price">
+              <span class="new-price">$5/mo per-device (avg)</span>
+              <span class="original-price">
+                <span class="sr-only">Licensing:</span>
+                Bass Licensing Options Apply
+              </span>
+            </div> -->
+            <div class="rating">
+              <form action="" target="_blank">
+                <strong>
+                  I have read and agree to the <a class="modal-trigger" href="https://docs.blisscolabs.dev/legal/end_user_license_agreement/" target="_blank">End User License Agreement (EULA) </a>
+                  <input class="js-terms-chk17" type="checkbox" name="termsAccepted">
+                </strong>
+                <button class="js-book-btn17 btn btn-primary mx-o my-2" disabled href="" target="_blank">Download</button>
+              </form>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card disabler">
+            <a href="https://h-mdm.com/" target="_blank" class="main-link">
+              <h2 class="title">Headwind MDM</h2>
+              <div class="image">
+                <img src="assets/logos/headwind.png" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+              </div>
+            </a>
+            <h6 class="subtitle">General MDM</h6>
+            <p class="description">Standard Tablet Build 
+              Includes MicroG open-source GMS alternative</p>
+            <div class="badge">Watermarked</div>
+            <!-- <div class="price">
+              <span class="new-price">$2/mo per-device (avg)</span>
+              <span class="original-price">
+                <span class="sr-only">Licensing:</span>
+                Bass Licensing Options Apply
+              </span>
+            </div> -->
+            <div class="rating">
+              <form action="" target="_blank">
+                <strong>
+                  I have read and agree to the <a class="modal-trigger" href="https://docs.blisscolabs.dev/legal/end_user_license_agreement/" target="_blank">End User License Agreement (EULA) </a>
+                  <input class="js-terms-chk18" type="checkbox" name="termsAccepted">
+                </strong>
+                <button class="js-book-btn18 btn btn-primary mx-o my-2" disabled href="" target="_blank">Download</button>
+              </form>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <a href="mailto:info@navotpala.tech?subject=MDM Build Inquiry" target="_blank" class="main-link">
+              <h2 class="title">Your MDM</h2>
+              <div class="image">
+                <img src="assets/screenshots/Tablet/Screenshot_20241031-145619_Quickstep.png" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+              </div>
+            </a>
+            <p class="description">Not sure where to start or want to know if your current MDM is compatible? Contact us and we can include your preference of MDM or we can create one for you</p>
+            <div class="price">
+              <span class="new-price"><a href="mailto:info@navotpala.tech?subject=MDM Build Inquiry">Contact Us For Pricing</a></span>
+              <span class="original-price">
+                <span class="sr-only">Originally:</span>
+              </span>
+            </div>
+            <div class="rating">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
       <!-- Gamer section start -->
       <div class="row game-section text-center">
         <div class="col-md-12">
@@ -1093,7 +1251,7 @@
           <div class="item" style="background-image: url(assets/screenshots/Gamer-P/Screenshot_20240812-230544_Cross\ Launcher.png);">
             <div class="item-desc">
               <h3>Bass Gamer-P</h3>
-              <p>This variant comes with <a href="https://github.com/EmiyaSyahriel/CrossLauncher" target="_blank">CrossLauncher</a> , which is a launcher that emulates the PSX experience</p>
+              <h6>This variant comes with <a href="https://github.com/EmiyaSyahriel/CrossLauncher" target="_blank">CrossLauncher</a> , which is a launcher that emulates the PSX experience</h6>
               <!-- Content/Semantics -->
               <form action="https://sourceforge.net/projects/bliss-co-labs/files/BlissBass/CGame/Bass-CGame-v15.9-x86_64-OFFICIAL-foss-2024022610" target="_blank">
                 <strong>
@@ -1107,7 +1265,7 @@
           <div class="item" style="background-image: url(assets/screenshots/mgame/photo_5114012474562161875_y.jpg);">
             <div class="item-desc">
               <h3>Bass Gamer-X</h3>
-              <p>This variant comes with <a href="https://github.com/sinusinu/Molla" target="_blank">Molla Launcher</a>, which is a launcher that emulates the XBox experience</p>
+              <h6>This variant comes with <a href="https://github.com/sinusinu/Molla" target="_blank">Molla Launcher</a>, which is a launcher that emulates the XBox experience</h6>
               <!-- Content/Semantics -->
               <form action="https://sourceforge.net/projects/bliss-co-labs/files/BlissBass/MGame/Bass-MGame-v15.9-x86_64-OFFICIAL-foss-2024022614" target="_blank">
                 <strong>
@@ -1121,7 +1279,7 @@
           <div class="item" style="background-image: url(assets/screenshots/tgame/02.png);">
             <div class="item-desc">
               <h3>Bass Gamer-E</h3>
-              <p>This variant comes with <a href="https://titanius.app/" target="_blank">Titanius Launcher</a>, which is a launcher that provides an Emulation focused gaming experience</p>
+              <h6>This variant comes with <a href="https://titanius.app/" target="_blank">Titanius Launcher</a>, for a standard Game Emulation style experience</h6>
               <!-- Content/Semantics -->
               <form action="" target="_blank">
                 <strong>
@@ -1135,7 +1293,7 @@
           <div class="item" style="background-image: url(assets/screenshots/Gamer-S\ 8_13_2024/Screenshot_20240813-102530_Vapor.png);">
             <div class="item-desc">
               <h3>Bass Gamer-S</h3>
-              <p>This variant comes with <a href="https://github.com/imperador/vapor-launcher" target="_blank">Vapor Launcher</a>, which is a launcher that emulates the Steam OS experience</p>
+              <h6>This variant comes with <a href="https://github.com/imperador/vapor-launcher" target="_blank">Vapor Launcher</a>, which is a launcher that emulates the Steam OS experience</h6>
               <!-- Content/Semantics -->
               <form action="" target="_blank">
                 <strong>
@@ -1301,151 +1459,26 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="mb-3">We Make Learning &amp; Building Easy</h1>
+          <h1 class="mb-3">We Make Building Android Look Easy</h1>
           <h6>Bass builds are put together by using the Bass toolkit, which comes with an easy to use command line interface for customizing, configuring and compiling the OS.</h6>
-          <a class="btn text-white btn-primary my-3" href="https://github.com/Bliss-Bass/bass-os" style="" target="_blank"><i class="fa fa-github fa-fw fa-1x py-1"></i> Checkout The Source</a>
+          <a class="btn text-white btn-primary mx-3 my-3" href="https://github.com/Bliss-Bass/bass-os" style="" target="_blank"><i class="fa fa-github fa-fw fa-1x py-1"></i>Bass-OS</a>
+          <a class="btn text-white btn-primary mx-3 my-3" href="https://github.com/Bliss-Bass/bass-ARM" style="" target="_blank"><i class="fa fa-github fa-fw fa-1x py-1"></i>Bass-ARM</a>
+          
           <h3 class="mb-3">Toolkit Features:</h3>
           <div class="list-group list-group-flush" style="">
-            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various navigation &amp; UI options: Navbar Style, Statusbar Style, default Launcher hotseats </div>
-            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various use-case launcher options. Eg: </div>
-            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various package options. Eg: </div>
-            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various Input &amp; system component options. Eg: </div>
-            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various hardware &amp; service configuration options. Eg: </div>
-            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various debug build options, including root option.Eg: </div>
-            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Automatically updates Grub menus and other build configs for launcher and mode options (x86/x86_64 only) </div>
-            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Automatically generate secure private product/release keys per project&nbsp; </div>
-            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Custom vendor layer option for addition of third party application as well as device specific resources. Eg: </div>
+            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various navigation &amp; UI options: Navbar Style, Statusbar Style, default Launcher hotseats</div>
+            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various use-case launcher options</div>
+            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various package options</div>
+            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various Input &amp; system component options</div>
+            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various hardware &amp; service configuration options</div>
+            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Supports various debug build options, including root option</div>
+            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Automatically updates Grub menus and other build configs for launcher and mode options (x86/x86_64 only)</div>
+            <div class="list-group-item list-group-item-action list-group-item-secondary text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Automatically generate secure private product/release keys per project</div>
+            <div class="list-group-item list-group-item-action list-group-item-dark text-light" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;"> Custom vendor layer option for addition of third party application as well as device specific resources.</div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="mt-3 mb-3">Toolkit Options &amp; Usage:</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <pre class="text-left bg-dark p-2"><code class="text-left">
-$ . build/envsetup.sh &amp;&amp; build-x86 --help
-
-Usage: build-x86.sh [options]
-Options:
--h, --help             Display this help dialog
--c, --clean            Clean the project
---nocleanconf          Do not clean the project configs that are changed in source
--d, --dirty            Run in dirty mode
--t, --title (title)    Set the release title
--b, --blissbuildvariant (variant)   Set the Bliss build variant
--i, --isgo             Enable isgo version
--v, --specialvariant (variant)      Set the special variant
---grubcmdline "option1=1 option2=1" Set the grub cmdline options
---production           Disable Test Build watermark and sign builds (requires release/product signature keys)
---checkproject         Check the project status
-
-Launcher Options:
---clearhotseat         Enable clear hotseat favorites for Launcher3 Quickstep
---disablesearch        Disable device search
--s, --smartdock        Enable smartdock
---smartdockb           Enable smartdock with Bliss customizations
--k, --kiosk            Enable kiosk launcher **requires private git access**
---restrictedlauncher   Enable restricted launcher
---restrictedlauncherpro   Enable restricted launcher pro **requires private git access**
---garliclauncher       Enable garlic launcher
---gamemodelauncher     Enable game mode launcher
---crosslauncher        Enable cross launcher
---tvlauncher           Enable tv launcher
---titaniuslauncher     Enable titanius launcher
---desktoponsecondary   Enable desktop on secondary displays
-
-Navigation Options:
--t, --tabletnav        Enable tablet navigation
---taskbarnav           Enable taskbar navigation
---gesturenav    Enable gesture navigation
---externalnav          Enable navigation on external displays
---rightmouseasback     Enable right mouse button as back
-
-Package Options:
---noksu                Disable KernelSU
--f, --fossapps         Enable fossapps
---minfossapps          Enable minimal fossapps
---minfossmicrog        Enable minimal fossapps with microg
---usecalyxmicrog       Enable Calyx microg
---aurorastore          Enable Aurora store
--e, --supervanilla     Enable supervanilla
--m, --minimal          Enable minimal packages
--r, --removeusertools  Enable removeusertools
---viabrowser           Enable viabrowser
--w, --wiz              Enable Bliss setupwizard
---ethernetmanager      Enable EthernetManager
---powermanager         Enable power manager
---buildextra           Build extra packages
---updatefossapps       Update fossapps
---usepos               Enable TabShop pos terminal app
--p, --privateapp       Enable privateapps **requires private git access**
---ax86startmenu        Enable ax86 startmenu
-
-Input Options:
---showkeyboard         Enable show keyboard
---perdisplayfocus      Enable per display focus (will display any IME on all displays)
---gboard               Enable Google GBoard IME
---gboardlite           Enable Google GBoard Lite IME
---perdisplayfocusime      Enable per display focus with experiment IME
---perdisplayfocuszqyime   Enable per display focus with ZQY IME
-
-Firmware &amp; Driver Options:
---sof                  Include SOF firmware
---silead               Include Silead firmware
-
-Other Options:
--a, --atom             Include Intel Atom specific configurations
--l, --lockdown         Enable secure lockdown build
---adblockdown          Enable lockdown ADB defaults
--m, --manifest         Generate manifest
---alwaysonsettings     Enable always on settings
---nolarge              Disable large screen settings
-
-Autogenerated Options:
---vapor          use vapor launcher
---sview          use screenview for mock-mirror mode applications
---pwir          use per window input rotation
---vndinput          use generated vendor input definition
---useblur          use SystemUI Blur effects
-
-          </code></pre>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h4>Below are a few combinations of the various command options put together in the form of Collections.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="text-left">Bass-Desktop:</h5>
-          <p class="text-left">Desktop mode demo of Bass featuring SmartDock</p>
-          <pre class="text-left bg-dark p-2"><code class="text-left">
-bash build_bass.sh --clean --title "Bass" --blissbuildvariant vanilla --specialvariant "-Desktop" --ethernetmanager --minfossapps --tabletnav --clearhotseat --nolarge --supervanilla --minimal --alwaysonsettings --sof --silead --smartdock --wiz --aurorastore --usecalyxmicrog --privateapp --pwir --grubcmdline "BTLINUX_HAL=1 androidboot.force.win_as_home=1"
-          </code></pre>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="text-left">Bass-Restricted:</h5>
-          <p class="text-left">Restricted mode demo of Bass featuring Bliss Restricted Launcher</p>
-          <pre class="text-left bg-dark p-2"><code class="text-left">
-bash build_bass.sh --clean --title "Bass" --blissbuildvariant vanilla --specialvariant "-Restricted" --ethernetmanager --minfossapps --tabletnav --clearhotseat --nolarge --supervanilla --minimal --alwaysonsettings --sof --silead --restrictedlauncher --wiz --aurorastore --usecalyxmicrog --privateapp --pwir --grubcmdline "BTLINUX_HAL=1 androidboot.force.win_as_home=1"
-          </code></pre>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="text-left">Bass-Gammer-P:</h5>
-          <p class="text-left">Gaming focused demo of Bass featuring CrossLauncher </p>
-          <pre class="text-left bg-dark p-2"><code class="text-left">
-bash build_bass.sh --clean --title "Bass" --blissbuildvariant vanilla --specialvariant "-Gamer-P" --ethernetmanager --minfossapps --tabletnav --clearhotseat --nolarge --supervanilla --minimal --alwaysonsettings --sof --silead --crosslauncher --wiz --aurorastore --usecalyxmicrog --privateapp --pwir --grubcmdline "BTLINUX_HAL=1 androidboot.force.win_as_home=1"
-          </code></pre>
-        </div>
-      </div>
+      
     </div>
   </div>
   <div class="py-5 text-center text-white bg-info" id="docs" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75));	background-position: center center;	background-size: cover;	background-repeat: repeat;">
@@ -1671,7 +1704,7 @@ bash build_bass.sh --clean --title "Bass" --blissbuildvariant vanilla --specialv
         <div class="p-5 col-md-6">
           <h3><b>Bass OS</b></h3>
           <p>(Broad Apparatus Support System)</p>
-          <p>A highly configurable open-source OS based on Android-x86 and <a href="https://blissos.org">Bliss OS</a>, and it works with most Windows, ChromeOS &amp; Linux PC hardware, designed to be easily customized and rebranded for your specific project needs</p>
+          <p>A highly configurable open-source OS based on AOSP, Android-x86 and <a href="https://blissos.org">Bliss OS</a>, and it works with most x86_64 (amd64) based Windows, ChromeOS &amp; Linux PC hardware, designed to be easily customized and rebranded for your specific project needs</p>
           <p class="">Brought to you by Navotpala Tech</p>
           <p class="">
             <a href="mailto:info@navotpala.tech">info@navotpala.tech</a></p>
@@ -1755,6 +1788,9 @@ bash build_bass.sh --clean --title "Bass" --blissbuildvariant vanilla --specialv
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="js/gamer-section.js"></script>
   <script src="js/eula.js"></script>
+  <script src="js/slick.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js'></script><script  src="./script.js"></script>
+
   <!-- <div class="modal-backdrop fade show" style="" ></div> -->
 </body>
 
